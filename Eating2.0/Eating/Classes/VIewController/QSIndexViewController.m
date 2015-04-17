@@ -63,8 +63,6 @@
     [self setupNotification];
     
     [[LocationManager sharedManager] startUpdateUserLocation];
-   
-    
     [self.indexTableView headerBeginRefreshing];
     
     
@@ -211,7 +209,6 @@
                 cell = nibs[0];
             }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            
         
         }
         
