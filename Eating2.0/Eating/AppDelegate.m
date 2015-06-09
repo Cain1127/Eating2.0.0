@@ -265,6 +265,7 @@
     
     // Required：极光推送保存设备token
     [APService registerDeviceToken:deviceToken];
+    
 }
 
 #pragma mark - 通知消息
@@ -336,7 +337,8 @@ fetchCompletionHandler:
 }
 
 - (void)application:(UIApplication *)application
-didReceiveLocalNotification:(UILocalNotification *)notification {
+didReceiveLocalNotification:(UILocalNotification *)notification
+{
     
     [APService showLocalNotificationAtFront:notification identifierKey:nil];
     
